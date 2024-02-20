@@ -1,0 +1,13 @@
+Professora, meu programa ficou além do pedido, por isso ficou grande, tem muitas imagens
+pode parece dificil inicialmente então vou descrever.
+	
+	ao iniciar o programa abre a tela de Login
+	temos 2 usarios ativos: admin e user
+	login:admin - senha: admin123
+	login:user - senha:user123
+	No admin é habilitado para fazer o cadastro de livro, após o fim dos cadastros o sistema é redirecionado para tela principal de login
+	o login user habilita algumas opções: emprestimo, devolução e situação
+		+ emprestimo - o usuario pode procurar o livro pelo titulo, autor e editora, tem também a opção de pegar emprestado (como reserva);
+		+ devolução - o usuario pode procurar o livro pelo titulo, autor e editora para devolver:
+		+ situação - imprime a lista de todos os livros e sua situação;
+	

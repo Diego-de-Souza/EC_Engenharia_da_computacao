@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="082220042"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-09 10:26:25 "/>
+        <attribute name="created" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzA5OzIwMjItMDktMDk7IjA5OjU5OjUwICI7MjUxMg=="/>
+        <attribute name="edited" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzA5OzIwMjItMDktMDk7IjEwOjI2OjI1ICI7MTsyNjA4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="t, dab, va, vb, local" type="Real" array="False" size=""/>
+            <output expression="&quot;Vamos calcular o MRU - movimento retilineo uniforme&quot;" newline="True"/>
+            <output expression="&quot;Qual a velocidade do movel A? &quot;" newline="True"/>
+            <input variable="va"/>
+            <output expression="&quot;Qual a velocidade do movel B? &quot;" newline="True"/>
+            <input variable="vb"/>
+            <output expression="&quot;Qual a dist&#226;ncia entre os m&#243;veis A e B? &quot;" newline="True"/>
+            <input variable="dab"/>
+            <assign variable="t" expression="dab/(va-vb)"/>
+            <assign variable="local" expression="va*t"/>
+            <if expression="va &lt;= vb">
+                <then>
+                    <output expression="&quot;Os moveis nuca se encontraram!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Se encontraram em &quot;" newline="False"/>
+                    <output expression="local" newline="False"/>
+                    <output expression="&quot;km em &quot;" newline="False"/>
+                    <output expression="t" newline="False"/>
+                    <output expression="&quot;minutos&quot;" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

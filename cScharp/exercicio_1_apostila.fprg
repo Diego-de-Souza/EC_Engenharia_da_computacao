@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="082220042"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-19 10:38:31 "/>
+        <attribute name="created" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzE3OzIwMjItMDgtMTk7IjEwOjI3OjE4ICI7MjUwMg=="/>
+        <attribute name="edited" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzE3OzIwMjItMDgtMTk7IjEwOjM4OjMxICI7MTsyNjA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="R, B, C, D" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor de B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;Digite o valor de C&quot;" newline="True"/>
+            <input variable="C"/>
+            <output expression="&quot;Digite o valor de D&quot;" newline="True"/>
+            <input variable="D"/>
+            <assign variable="R" expression="(B^2)-(C-D)"/>
+            <output expression="&quot;O resultado &#233; &quot;" newline="False"/>
+            <output expression="R" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="082220042"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-09 09:38:50 "/>
+        <attribute name="created" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzA5OzIwMjItMDktMDk7IjA4OjU5OjMxICI7MjUxMA=="/>
+        <attribute name="edited" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzA5OzIwMjItMDktMDk7IjA5OjM4OjUwICI7MTsyNjE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eleitores, votosBranco, nulos, validos, percBranco, percNulos, percValidos" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual a quantidade de eleitores de um municipio? &quot;" newline="True"/>
+            <input variable="eleitores"/>
+            <output expression="&quot;Quantos votos foram em Branco? &quot;" newline="True"/>
+            <input variable="votosBranco"/>
+            <output expression="&quot;Quantos votos nulos? &quot;" newline="True"/>
+            <input variable="nulos"/>
+            <assign variable="validos" expression="eleitores - nulos"/>
+            <if expression="(votosBranco &lt; eleitores &amp;&amp; nulos &lt; eleitores &amp;&amp; (votosBranco + nulos) &lt; eleitores)">
+                <then>
+                    <assign variable="percValidos" expression="(validos*100)/eleitores"/>
+                    <assign variable="percBranco" expression="(votosBranco*100)/eleitores"/>
+                    <assign variable="percNulos" expression="(nulos*100)/eleitores"/>
+                    <output expression="&quot;O municipio tem &quot;" newline="False"/>
+                    <output expression="eleitores" newline="False"/>
+                    <output expression="&quot;, dos 100% de eleitores do municipio &quot;" newline="False"/>
+                    <output expression="percValidos" newline="False"/>
+                    <output expression="&quot;% s&#227;o votos v&#225;lidos, &quot;" newline="False"/>
+                    <output expression="percBranco" newline="False"/>
+                    <output expression="&quot;% s&#227;o votos em branco, &quot;" newline="False"/>
+                    <output expression="percNulos" newline="False"/>
+                    <output expression="&quot;% s&#227;o votos nulos&quot;" newline="False"/>
+                </then>
+                <else>
+                    <output expression="&quot;Desculpe voc&#234; digitou o n&#250;mero de votos em branco ou nulos maior que o n&#250;mero de eleitores, ou ainda a soma dos 2 foi maior que a quantidade de eleitores no municipio!! Fa&#231;a novamente a pesquisa.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

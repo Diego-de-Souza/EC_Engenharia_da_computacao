@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="082220042"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-19 10:42:55 "/>
+        <attribute name="created" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzE3OzIwMjItMDgtMTk7IjEwOjI3OjE4ICI7MjUwMg=="/>
+        <attribute name="edited" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzE3OzIwMjItMDgtMTk7IjEwOjQyOjU1ICI7MjsyNjA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="X, B, H, J, R" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o valor de B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;Digite o valor de H&quot;" newline="True"/>
+            <input variable="H"/>
+            <output expression="&quot;Digite o valor de J&quot;" newline="True"/>
+            <input variable="J"/>
+            <assign variable="X" expression="(B^3)*H"/>
+            <assign variable="R" expression="X / J"/>
+            <output expression="&quot;O resultado &#233; &quot;" newline="False"/>
+            <output expression="R" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

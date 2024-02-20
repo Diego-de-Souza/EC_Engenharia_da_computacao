@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="082220042"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-19 10:27:14 "/>
+        <attribute name="created" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzE3OzIwMjItMDgtMTk7IjA5OjMxOjIwICI7MjQ5OA=="/>
+        <attribute name="edited" value="MDgyMjIwMDQyO0NIRy1DRS1MQUI2MzE3OzIwMjItMDgtMTk7IjEwOjI3OjE0ICI7MTsyNjA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p1" type="Real" array="False" size=""/>
+            <declare name="p2" type="Real" array="False" size=""/>
+            <declare name="p3" type="Real" array="False" size=""/>
+            <declare name="p4" type="Real" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;Por gentileza digite a nota 1&quot;" newline="True"/>
+            <input variable="p1"/>
+            <output expression="&quot;Por gentileza digite a nota 2&quot;" newline="True"/>
+            <input variable="p2"/>
+            <output expression="&quot;Por gentileza digite a nota 3&quot;" newline="True"/>
+            <input variable="p3"/>
+            <output expression="&quot;Por gentileza digite a nota 4&quot;" newline="True"/>
+            <input variable="p4"/>
+            <assign variable="media" expression="(p1+p2+p3+p4)/4"/>
+            <if expression="media &gt;= 5">
+                <then>
+                    <output expression="&quot;Sua m&#233;dia &#233; &quot;" newline="False"/>
+                    <output expression="media" newline="True"/>
+                    <output expression="&quot;Voc&#234; foi aprovado!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua m&#233;dia &#233;&quot;" newline="False"/>
+                    <output expression="media" newline="True"/>
+                    <output expression="&quot;Voc&#234; ter&#225; que estudar mais...&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
