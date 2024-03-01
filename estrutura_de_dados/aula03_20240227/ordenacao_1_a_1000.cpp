@@ -2,26 +2,38 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
+#include <chrono>
 
 using namespace std;
 
-int main(int argc, int argv){
+int main(){
 
-    double numerosAleatorios[10] = {};
+    double numerosAleatorios[100] = {};
     unsigned seed = time(0);
     srand(seed);   
     double aux;
 
-    for(int i=0; 1 < 10;i++){
-        numerosAleatorios[i]= rand()%100;
+    //inicia a contagem 
+    auto start = std::chrono::high_resolution_clock::now();
+
+    for(int i=0; i < 100;i++){
+        numerosAleatorios[i]= rand()%1000;
         cout << numerosAleatorios[i] << " | ";
         
     }
     cout << endl;
-    cout << aux = sizeof(numerosAleatorios) << endl;
-/*
-    for(int i=0; i< 10;i++){
-        for(int j=0; j < 9;j++){
+    
+    //finaliza a contagem
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> elapsed_time = end - start;
+    std::cout << "Tempo de execução para geração: " << elapsed_time.count() << " ms" << std::endl;
+    
+    //inicia a contagem 2
+    auto start1 = std::chrono::high_resolution_clock::now();
+
+    for(int i=0; i< 100;i++){
+        for(int j=0; j < 99;j++){
             if(numerosAleatorios[j] > numerosAleatorios[j+1]){
                 aux=numerosAleatorios[j];
                 numerosAleatorios[j] = numerosAleatorios[j+1];
@@ -29,35 +41,17 @@ int main(int argc, int argv){
             }
         }
     }
-
-    cout << sizeof(numerosAleatorios) << endl;
+    //finaliza a contagem 2
+    auto end1 = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> elapsed_time1 = end1 - start1;
     
-    for (int i=0; i<10; i++){
+    for (int i=0; i<100; i++){
         cout << numerosAleatorios[i] << " | ";
     }
     cout << endl;
+    
+    std::cout << "Tempo de execução para ordenação: " << elapsed_time1.count() << " ms" << std::endl;
+    std::cout << "Tempo de execução Total: " << elapsed_time.count()+elapsed_time1.count() << " ms" << std::endl;
 
-    return 0;
-
-
-double notas[10] = {5.5,9.8,6.4,4.1,5.2,8.2,4.8,7.3,8.4,9.1};
-    double aux;
-
-    /////////////bubble sort ////////////
-    for(int i=0; i < 10; i++){
-        for(int j=0;j < 9; j++ ){
-            if(notas[j] > notas[j+1]){
-                aux=notas[j];
-                notas[j] = notas[j+1];
-                notas[j+1] = aux;
-            }
-        }
-    }
-    ////////////////////////////////////
-    for (int i=0; i<10; i++){
-        cout << notas [i] << " | ";
-    }
-    cout << endl;
-*/
     return 0;
 }

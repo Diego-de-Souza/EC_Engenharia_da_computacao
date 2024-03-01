@@ -5,19 +5,18 @@
 
 using namespace std;
 
-int main(int argc, int argv){
+int main(){
 
-    double numerosAleatorios[10] = {};
+    double numerosAleatorios;
     unsigned seed = time(0);
     srand(seed);   
-    double aux;
 
-    for(int i=0; 1 < 10;i++){
-        numerosAleatorios[i]= rand()%100;
-        cout << numerosAleatorios[i] << " | ";
-        
-    }
-    cout << endl;
-
+    
+    numerosAleatorios= rand()%100;
+     
+    double numerorealAleatorio = (double)rand() / RAND_MAX * 100;
+    
+    cout << numerosAleatorios << endl;
+    cout << numerorealAleatorio << endl;
 
 }
