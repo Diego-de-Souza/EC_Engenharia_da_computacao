@@ -1,0 +1,21 @@
+bubble sort
+	como funciona?
+		É um método que verifica dois elementos para ver qual deles é maior, caso o segundo elementos seja maior que o primeiro ele não faz nada, já se for ao contrário ele troca a ordem dos elementos fazendo sempre o maior ficar depois, mas ele só faz essa verificação de 2 em dois da esquerda para direita, ou de cima para baixo.
+
+Insertion sort
+	Como funciona?
+		É um metodo que pega um valor, depois pega outroa valor e compara com o primeiro valor, se o segundo valor for menor que o primeiro ele passa o segundo valor para frente do primeiro valor, caso contrario fica depois do primeiro valor, pega outro valor e compara com o valor na posição anteriorna nova ordem, se for menor ele compara com o anterior a ele e assim sucessivamente até não ser menor que o anterior e é colocado na posição depois do menor que ele.
+		melhor caso O(n) - pior caso O(n²) - caso médio O(n²)
+
+Section sort 
+	como funciona?
+		é um método que guarda o primeiro valor e vare todos os outros valores para ver se tem um valor menor que o primeiro, se tiver quando terminar de verrer ele vai no valor menor e passa ele para antes do primeiro valor, pega o segundo valor reserva e novamente varre todos os elementos seguintes para verificar se tem um menor, se tiver coloca antes do guardado e assim por diante, ou seja, encontra o menor elemento em cada passo e o troca com o primeiro elemento não ordenado.
+		melhor caso O(n²) - pior caso O(n²) - caso médio O(n²)
+
+merge sort
+	como funciona?
+		Pega 2 valores e comparapara ver qual menor e ordenar, volta eles para o lugar e pega mais dois elementos e compara, volta eles para o lugar e ordena junto com os dois primeiro e volta os 4 para seu lugar ordenados, pega mais 2 elementos compara e volta para o lugar ordenado, pega mais dois e volta para o lugar ordenado, pega os 4 e volta para o lugar ordenado, depois pega os 8 e volta para o lugar ordenado e assim por diante.
+		melhor caso O(n log n) - pior casoO(n log n) - caso médio O(n log n)
+
+
+
