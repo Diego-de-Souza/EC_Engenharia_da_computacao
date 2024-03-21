@@ -15,7 +15,24 @@ Section sort
 merge sort
 	como funciona?
 		Pega 2 valores e comparapara ver qual menor e ordenar, volta eles para o lugar e pega mais dois elementos e compara, volta eles para o lugar e ordena junto com os dois primeiro e volta os 4 para seu lugar ordenados, pega mais 2 elementos compara e volta para o lugar ordenado, pega mais dois e volta para o lugar ordenado, pega os 4 e volta para o lugar ordenado, depois pega os 8 e volta para o lugar ordenado e assim por diante.
-		melhor caso O(n log n) - pior casoO(n log n) - caso médio O(n log n)
+		melhor caso O(n * log n) - pior caso O(n * log n) - caso médio O(n * log n)
+quick sort
+	como funciona?
+		O método se baseia em dividir e conquistar, ele vai dividindo em parte menores a lista para reordenar até que tenha somente dois elementos em cada arranjo ordenado, em seguinda ele junta novamente os pedaçoes de forma ordenada.
+		melhor caso O(n²) - pior caso O(n²) - caso médio O(n * log n)
 
+heap sort
+	Como funciona?
+		Selecione o maior (ou menor) item do vetor e a seguir troque-o com o item que está na Heapsort a seguir troque-o com o item que está na última (ou primeira) posição do vetor; repita estas duas operações com os n - 1 itens restantes; depois com os n - 2 itens; e assim sucessivamente.
+		melhor caso O(n * log n) - pior caso O(n * log n) - caso médio O(n * log n)
 
+gnome sort
+	Como funciona?
+		O algoritmo percorre o vetor comparando seus elementos dois a dois, assim que ele encontra um elemento que está na posição incorreta, ou seja, um número maior antes de um menor, ele troca a posição dos elementos, e volta com este elemento até que encontre o seu respectivo lugar.
+		melhor caso O(n) - pior caso O(n²) - caso médio O(n²)
+
+bitonic sort
+	Como funciona?
+		 O seu princípio funcional baseia-se no compara-troca, onde dois elementos são comparados e se estiverem fora de ordem, serão trocados para obter a ordem classificada.
+		malhor caso O(log² n)
 
