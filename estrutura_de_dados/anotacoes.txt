@@ -1,6 +1,8 @@
 bubble sort
 	como funciona?
 		É um método que verifica dois elementos para ver qual deles é maior, caso o segundo elementos seja maior que o primeiro ele não faz nada, já se for ao contrário ele troca a ordem dos elementos fazendo sempre o maior ficar depois, mas ele só faz essa verificação de 2 em dois da esquerda para direita, ou de cima para baixo.
+		melhor caso O(n) - pior caso O(n²) - caso médio O(n²)
+
 
 Insertion sort
 	Como funciona?
@@ -36,3 +38,7 @@ bitonic sort
 		 O seu princípio funcional baseia-se no compara-troca, onde dois elementos são comparados e se estiverem fora de ordem, serão trocados para obter a ordem classificada.
 		malhor caso O(log² n)
 
+recursão
+	Como funciona?
+		A idéia básica de um algoritmo recursivo consiste em diminuir sucessivamente o problema em um problema menor ou mais simples, até que o tamanho ou a simplicidade do problema reduzido permita resolvê-lo de forma direta, sem recorrer a si mesmo.
+	
